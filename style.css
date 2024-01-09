@@ -6,12 +6,13 @@
 }
 
 body{
-    background-image: linear-gradient(135deg,#00e7d4, #505488, #09dac1, #161569, #8b00a3, #505488, #00E7D4);
-    background-size: 500%;
-    animation: fanimado 60s infinite;
+    background-image: url(Image/c1fd141b0fc2af04cc70711564b1b358.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
 }
 .contenedor{
-
     width: 100vw;
     height: 100vh;
     text-align: center;
@@ -23,12 +24,24 @@ p{
 }
 
 button{
-    font-size: xx-large;
-    padding: 0.75em;
-    color: whitesmoke;
-    background-image: linear-gradient(135deg,#e9eb5b, #ffd000, #fb7507, #d70202, #fb7507, #ffd000, #e9eb5b);
-    background-size: 500%;
-    animation: fanimado 60s infinite;
+    border-radius: 50%;
+}
+.no{
+    width: 100px;
+    height: 100px;
+    background-image: url(ezgif-2-bac5ba6df0.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid #ff0000;
+}
+.si{
+    width: 100px;
+    height: 100px;
+    background-image: url(https://i.gifer.com/Pak.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border: 5px solid #3cf100;
 }
 
 #yesBtn{
@@ -105,4 +118,10 @@ button{
     right: -50%;
     border-radius: 50%;
     box-shadow: 10px 10px 90px #f20044;
+}
+
+.music{
+    border-radius: 30px;
+    border: 5px solid blue;
+    background: blue;
 }
