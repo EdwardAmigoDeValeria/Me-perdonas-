@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background-image: linear-gradient(135deg,#00e7d4, #505488, #09dac1, #161569, #8b00a3, #505488, #00E7D4);
+    background-size: 500%;
+    animation: fanimado 60s infinite;
+}
+.contenedor{
+
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+p{
+    font-size: xx-large;
+    padding: 5%;
+}
+
+button{
+    font-size: xx-large;
+    padding: 0.75em;
+    color: whitesmoke;
+    background-image: linear-gradient(135deg,#e9eb5b, #ffd000, #fb7507, #d70202, #fb7507, #ffd000, #e9eb5b);
+    background-size: 500%;
+    animation: fanimado 60s infinite;
+}
+
+#yesBtn{
+    transform: translate(-100%,0);
+}
+
+#noBtn{
+    position: absolute;
+}
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fanimado{
+    0%{
+        background-image: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.heart{
+    display: flex;
+    margin: 0 47.5% 50px;
+
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 0.6s linear infinite;
+}
+
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+.heart:before{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: -10px -10px 90px #f20044;
+}
+.heart:after{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    right: -50%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 90px #f20044;
+}
