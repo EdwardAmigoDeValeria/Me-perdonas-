@@ -18,6 +18,7 @@ noBtn.addEventListener('click', function () {
 
 noBtn.addEventListener('mouseover', function () {
 
+
     const randomX = parseInt(Math.random()*100);
     const randomY = parseInt(Math.random()*100);
 
@@ -28,6 +29,9 @@ noBtn.addEventListener('mouseover', function () {
 
 });
 
-window.addEventListener('mouseover',() => {
-    document.getElementById("song").play();
-})
+function Cambiar(){
+    let body = document.getElementsByTagName('body')[0];
+
+    body.style.backgroundImage = url="";
+
+}
